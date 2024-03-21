@@ -20,12 +20,13 @@ def hello_world():
 def start():
 	ans = 1 # only 1 variable of interest
 	if(ans == 0):
-		function4()
-		return 
+		return function4()
+	
 	ans = 1 ## one sample prroblem
 	if(ans == 0):
-		function1()
-		return 
+		return function1()
+	
+
 	ans = 1 ## normal distribution
 	if(ans == 2): #binomial
 		ans = 1 # normal approximation valid
@@ -37,13 +38,16 @@ def start():
 	elif(ans == 3): #poission
 		print("one sample poission test")
 		return
-	else:
+	elif(ans == 4):
 		print("use another underlying distribution or use non parameteric test")
+		return
 		
+
 	ans = 1 # inference conerning
 	if(ans == 0):
 		print("one sample chi square test")
 		return
+	
 	ans = 1 # known
 	if(ans == 0 ):
 		print("one sample t test")
