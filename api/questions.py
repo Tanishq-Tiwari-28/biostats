@@ -108,7 +108,7 @@ questions = {
     22: {
         "question": "persons-time data ??",
         "options": ["Yes", "No"],
-        "next": [27  , "use another underlying distribution or use non parameteric test"],
+        "next": [26  , "use another underlying distribution or use non parameteric test"],
     },
     23: {
         "question": "samples independent ??",
