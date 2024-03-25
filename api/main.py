@@ -14,7 +14,13 @@ CORS(app)
 @app.route('/' , methods=['GET'])
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():  
-	data = {"message": "Hello from Flask!"}
+	data = {"message": "DEVELOPER: TANISHQ TIWARI"}
+	return jsonify(data)
+
+@app.route('/' , methods=['GET'])
+# ‘/’ URL is bound with hello_world() function.
+def hello_world2():  
+	data = {"message": "DEVELOPER: TANISHQ TIWARI"}
 	return jsonify(data)
 
 from questions import questions

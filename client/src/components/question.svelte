@@ -54,13 +54,43 @@ function selectOption(optionIndex) {
 
 
 </script>
+<style>
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Make sure the container takes the full height of the viewport */
+    font-family: 'Your Fancy Font', cursive; /* Replace 'Your Fancy Font' with your desired font */
+  }
 
+  /* Style the question text */
+  .question {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add some spacing between question and options */
+    text-align: center; /* Center align the text */
+  }
+
+  /* Style the options */
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Style individual option buttons */
+  .option-button {
+    margin: 5px; /* Add some spacing between options */
+    padding: 10px 20px; /* Adjust padding for better visual appearance */
+    font-size: 18px; /* Adjust font size as needed */
+  }
+</style>
 {#if $questionData !== null}
-  <div>
-      <p>{$questionData.question}</p>
-      <div>
+  <div class="container">
+      <p class="question">{$questionData.question}</p>
+      <div class="options">
           {#each $questionData.options as option, index}
-              <button on:click={() => selectOption(index)}>{option}</button>
+              <button class="option-button" on:click={() => selectOption(index)}>{option}</button>
           {/each}
       </div>
   </div>
