@@ -22,7 +22,7 @@
 <main>
     <h1>{message}</h1>
     {#if finalResult === undefined}
-        <Question id={1} on:finalResult={handleFinalResult} />
+        <Question id={0} on:finalResult={handleFinalResult} />
     {:else}
         <Result result={finalResult} />
     {/if}

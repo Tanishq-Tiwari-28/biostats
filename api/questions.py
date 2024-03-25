@@ -1,4 +1,9 @@
 questions = {
+    0:{
+        "question" : "DO YOU WANT TO KNOW BEST STATISTICAL TEST FOR YOU DATA!! TELL US ABOUT YOUR DATA AND WE WILL HELP YOU OUT 😊",
+        "options" : ["START"],
+        "next" : [1],
+    },
     1: { # start
         "question": "Is there only one variable of interest?",
         "options": ["Yes", "No"],
