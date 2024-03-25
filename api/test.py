@@ -3,7 +3,7 @@ def start():
 	if(ans == 0):
 		return function4()
 	
-	ans = int(input()) #1 ## one sample prroblem
+	ans = int(input()) #1 ## one sample problem
 	if(ans == 0):
 		return function1()
 	
@@ -61,7 +61,7 @@ def function1():
 		return function5()
 			
 
-	ans = int(input()) #1 #inferences concerning means
+	ans = int(input()) #1 # inferences concerning means
 	if(ans == 0):
 		print("2 sample F test to compare variances")
 		return
@@ -76,6 +76,7 @@ def function2():
 	ans = int(input()) #0 # not categorical data
 	if(ans == 1):
 		print("Use R X C contingency table methods")
+		return
 	print("use non parametric test like Kruskall Wallis or other distribution")
 	return
 
@@ -89,6 +90,7 @@ def function3():
 	ans = int(input()) #1 # variance of 2 samples significantly different(USing F test)
 	if(ans == 0):
 		print("Use 2 samped T test wth equal variances")
+		return
 	print("use 2 sample t test with unequal variances")
 	return
 
@@ -96,9 +98,9 @@ def function3():
 def function4():
 	ans = int(input()) #1 # interested in realtionship b.w 2 variables
 	if(ans == 0):
-		ans = int(input()) #1 #outcome variable continous
+		ans = int(input()) #1 # outcome variable continous
 		if(ans == 0): # binary
-			ans = int(input()) #1 #time of events important
+			ans = int(input()) #1 # time of events important
 			if(ans == 0):
 				print("Multiple Logistic regression")
 				return 
@@ -107,14 +109,14 @@ def function4():
 		print("Multiple regression Methods")
 		return
 		
-	ans = int(input()) #1 #both variable continous
+	ans = int(input()) #1 # both variable continous
 	if(ans == 0): 
-		ans = int(input()) #1 #one continous ans one categorical
+		ans = int(input()) #1 # one continous ans one categorical
 		if(ans == 0):
-			ans = int(input()) #1 #ordinal data
+			ans = int(input()) #1 # ordinal data
 			if(ans == 0): # categorical
-				ans = int(input()) #1 #interested in association
-				if(ans == 0): #interested in reproducibility
+				ans = int(input()) #1 # interested in association
+				if(ans == 0): # interested in reproducibility
 					print("Kaspa statistic")
 					return
 				print("Contingency table methods")
@@ -148,7 +150,7 @@ def function4():
 		print("2 way ANCOVA")
 		return
 	
-	ans = int(input()) #0 #interested in predicting one varable from other 
+	ans = int(input()) #0 # interested in predicting one varable from other 
 	if(ans == 1):
 		print("SIMPLE linear regression")
 		return
