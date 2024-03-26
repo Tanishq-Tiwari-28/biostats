@@ -14,7 +14,7 @@ CORS(app)
 @app.route('/' , methods=['GET'])
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():  
-	data = {"message": "DEVELOPER: TANISHQ TIWARI"}
+	data = {"message": "STATSII..."}
 	return jsonify(data)
 
 @app.route('/' , methods=['GET'])
