@@ -1,11 +1,10 @@
 <!-- Question.svelte -->
 <script>
-  import Typed from 'typed.js';
-
-  import { onMount } from 'svelte';
+  import { onMount , onDestroy} from 'svelte';
   import { writable } from 'svelte/store';
   import { createEventDispatcher } from 'svelte';
-  
+  import { typewriter } from '../transition'; // Import typewriter function
+
   export let id;
   export let onNext;
 
@@ -19,22 +18,26 @@
           .then(data => {
               questionData.set(data);
               console.log(data.question)
-              initTyped(data.question);
           });
+      star    
+      function startTypewriter() {
+      unsubscribe = questionData.subscribe($questionData => {
+        if ($questionData) {
+          const text = $questionData.question;
+          const pElement = document.querySelector('.question');
+          if (pElement) {
+            pElement.textContent = ''; // Clear existing text
+            typewriter(pElement, { duration: 1.5 }); // Apply typewriter effect
+          }
+        }
+      });
+  }
           
   });
-  function initTyped(question) {
-    new Typed('.question', {
-      strings: [question], // Pass the question as a string to Typed.js
-      typeSpeed: 1.5 // Adjust the typing speed as needed
-    });
-  }
-  
   const dispatch = createEventDispatcher();
 
-  // Function to handle option selection
-  // Function to handle option selection
-// Function to handle option selection
+  
+
 function selectOption(optionIndex) {
     const selectedOption = questionData.update(data => {
         // Check if the next is a number
@@ -59,6 +62,11 @@ function selectOption(optionIndex) {
             console.error('Invalid next type:', typeof data.next[optionIndex]);
         }
         return data;
+    });
+    
+
+    onDestroy(() => {
+      unsubscribe(); // Unsubscribe when component is destroyed
     });
 
 }
@@ -158,8 +166,7 @@ function selectOption(optionIndex) {
   .question {
     font-size: 24px; /* Adjust font size as needed */
     margin-bottom: 50px; /* Add some spacing between question and options */
-    text-align: center;
-    width: auto; /* Center align the text */
+    text-align: center; /* Center align the text */
   }
 
   /* Style the options */
@@ -233,14 +240,13 @@ function selectOption(optionIndex) {
     100% { background-position: 0 0; }
   }
   
-
 </style>
 
 {#if $questionData !== null}
   <div class="container">
     <div class="wrapper">
       <div class="box">
-        <p class="question">{$questionData.question}</p>
+        <p class="question" >{$questionData.question}</p>
       </div>
     </div>
     <div class="options">
@@ -248,7 +254,9 @@ function selectOption(optionIndex) {
         <button class="option-button" on:click={() => selectOption(index)}>{option}</button>
       {/each}
     </div>
-  </div>    
+  </div>
 {:else}
   <p>Loading...</p>
 {/if}
+
+

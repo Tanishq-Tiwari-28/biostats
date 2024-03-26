@@ -87,7 +87,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto; /* Adjust height to fit content */
+    height: 500px; /* Adjust height to fit content */
     margin-top: 20px; /* Add some margin to separate the result and the GIF */
     font-family: 'Your Fancy Font', cursive;
   }
