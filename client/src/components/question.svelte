@@ -1,5 +1,6 @@
 <!-- Question.svelte -->
 <script>
+  
   import { onMount , onDestroy} from 'svelte';
   import { writable } from 'svelte/store';
   import { createEventDispatcher } from 'svelte';
@@ -240,9 +241,17 @@ function selectOption(optionIndex) {
     100% { background-position: 0 0; }
   }
   
+  
 </style>
 
+
 {#if $questionData !== null}
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/background.css">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
   <div class="container">
     <div class="wrapper">
       <div class="box">
