@@ -10,9 +10,9 @@ questions = {
         "next": [2, 7],
     },
     2: {
-        "question": "IS THIS A ONE-SAMPLE PROBLEM?🤔",
-        "options": ["Yes", "No"],
-        "next": [3, 21],
+        "question": "WHAT ARE THE TOTAL NUMBER OF SAMPLES🤔",
+        "options": ["1", "2" , "More than 2"],
+        "next": [3 , 22 , 32],
     },
     3: {
         "question": "TYPE OF DISTRIBUTION🤔",
@@ -20,11 +20,11 @@ questions = {
         "next": [4, 6, "ONE SAMPLE POISSON TEST", "USE ANOTHER UNDERLYING DISTRIBUTION OR USE NON-PARAMETRIC METHODS"],
     },
     4: {
-        "question": "INFERENCE CONCERNING?🤔",
-        "options": ["Yes", "no"],
-        "next": [5, "ONE SAMPLE CHI SQUARE TEST FOR VARIANCES(Caution: this test is very sensitive to normality)"],
+        "question": "INFERENCE CONCERNING and KNOWNs?🤔",
+        "options": ["Yes", "no" , "inference Concerning but not known"],
+        "next": ["ONE SAMPLE Z TEST", "ONE SAMPLE CHI SQUARE TEST FOR VARIANCES(Caution: this test is very sensitive to normality)" , "ONE SAMPLE T TEST"],
     },
-    5: {
+    5: { # not used 
         "question": "KNOWNS?🤔",
         "options": ["Yes", "No"],
         "next": ["ONE SAMPLE Z TEST", "ONE SAMPLE T TEST"],
@@ -36,7 +36,7 @@ questions = {
     },
     7: { # function 4
         "question": "INTERESTED IN RELATIONSHIP B.W 2 VARIABLES ??🤔",
-        "options": ["Yes", "No"],
+        "options": ["Yes", "More Than 2 variables"],
         "next": [10, 8],
     },
     8: {
@@ -50,16 +50,16 @@ questions = {
         "next": [27 , "MULTIPLE LOGISTIC REGRESSION METHODS"],
     },
     10: {
-        "question": "BOTH VARIABLE CONTINOUS ??🤔",
-        "options": ["Yes", "No"],
-        "next": [19 , 11],
+        "question": "What is the type of both variables ??🤔",
+        "options": ["Continous", "1 continous and 1 categorical" , "both Ordinal" , "Both Categorical"],
+        "next": [19 , 14 , "RANK COORELATION METHODS" , 13],
     },
-    11: {
+    11: { #not used
         "question": "ONE VARIABLE CONTINOUS AND ONE CATEGORICAL ??🤔",
         "options": ["Yes", "No"],
         "next": [ 14, 12],
     },
-    12: {
+    12: { #not used
         "question": "ORDINAL DATA ??🤔",
         "options": ["Yes", "No"],
         "next": ["RANK COORELATION METHODS" , 13],
@@ -111,7 +111,7 @@ questions = {
         "next": [22, 32],
     },
     22: {
-        "question": "DISTRIBUTION  ??🤔",
+        "question": "TYPE OF DISTRIBUTION  ??🤔",
         "options": ["normal", "Binomial" , "other"],
         "next": [26 , 24 , 23],
     },
