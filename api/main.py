@@ -37,6 +37,7 @@ def get_question(id):
     return jsonify(current_question)
 
 
+
 @app.route('/answer', methods=['POST'])
 def handle_answer():
     data = request.json
