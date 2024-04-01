@@ -8,7 +8,7 @@
 
 
   export let onNext;
-
+  export let isFirstOption;
   // Define a writable store to hold the question and options
   export const questionData = writable(null);
   
@@ -87,6 +87,7 @@ export function selectOption(optionIndex) {
       unsubscribe(); // Unsubscribe when component is destroyed
     });
 
+    let isFirstOption = true; //for back button 
     
 
 }
@@ -115,10 +116,16 @@ export function selectOption(optionIndex) {
       {#each $questionData.options as option, index}
         <button class="option-button" on:click={() => selectOption(index)}>{option}</button>
       {/each}
+      {#if $questionData.options.length > 1}
+      <button class="option-button back-button" on:click={() => selectOption('back')}>Back</button>
+      {/if}
     </div>
   </div>
+
+
 {:else}
   <p>Loading...</p>
 {/if}
 
+<!-- <button class="option-button" on:click={() => selectOption('back')}>Back</button> -->
 
