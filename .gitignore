@@ -1,4 +1,6 @@
 myenv
 api/__pycache__
-client/node_modules
 .vercel
+.config
+node_modules
+
