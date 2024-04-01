@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "backend", // Replace with your backend directory if different
+      "use": "@vercel/python",
+      "config": {
+        "pythonVersion": "3.11.8"
+      }
+    }
+  ]
+}
