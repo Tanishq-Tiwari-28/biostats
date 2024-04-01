@@ -8,7 +8,6 @@
 
 
   export let onNext;
-  export let isFirstOption;
   // Define a writable store to hold the question and options
   export const questionData = writable(null);
   
