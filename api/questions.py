@@ -1,11 +1,8 @@
 questions = {
-    38:{
-
-    },
     0:{
         "question" : "DO YOU WANT TO KNOW BEST STATISTICAL TEST FOR YOUR DATA!! TELL US ABOUT YOUR DATA AND WE WILL HELP YOU OUT 😊",
         "options" : ["Tell us about your data, Upload the File."],
-        "next" : [38],
+        "next" : [1],
     },
     1: { # start
         "question": "IS THERE ONLY ONE VARIABLE OF INTEREST?🤔",
