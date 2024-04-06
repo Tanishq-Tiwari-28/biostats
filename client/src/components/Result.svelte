@@ -19,7 +19,7 @@
       <p class="resultcss">{result}</p>
     </div>
   </div>
-    <div class="gif-container">
+    <!-- <div class="gif-container">
       <img src="/giphy.gif" alt="Statistical Tests GIF" />
-    </div>
+    </div> -->
 </div>
