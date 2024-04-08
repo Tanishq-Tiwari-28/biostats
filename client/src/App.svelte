@@ -24,6 +24,8 @@
 
 <main>
     <h1>{message}</h1>
+    <div class="logo"></div>
+
     {#if finalResult === undefined}
         <!-- <File /> -->
         <Question id={0} on:finalResult={handleFinalResult} />

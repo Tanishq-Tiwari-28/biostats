@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="client\public\Designer.png" alt="Markdownify" width="200"></a>
+  <img src="client\public\logo.png" alt="Markdownify" width="200"></a>
   <br>
   STATSII
   <br>
@@ -26,7 +26,7 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
+  <a href="#demo">DEMO</a> •
   <a href="#credits">Credits</a> •
   <a href="#author">Author</a> •
   <a href="#contributors">Contributors</a> •
@@ -35,8 +35,10 @@
   <!-- <a href="#related">Related</a> •
   <a href="#license">License</a> -->
 </p>
-<!-- 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif) -->
+
+
+
+
 
 ## Key Features
 
@@ -71,7 +73,8 @@ $ flask --app main.py run
 $ cd client
 $ npm run dev
 
-
+Now you will see the web application on your NPM local server.
+Click on START to proceed. 
 ```
 
 > **Note**
@@ -79,6 +82,11 @@ $ npm run dev
 > In case of the ERROR "Error: Cannot find package 'rollup-plugin-svelte' ".
 Terminate the Batch job and run "npm run dev" again.
  
+
+
+## DEMO
+
+
 
 <!-- ## Download
 
