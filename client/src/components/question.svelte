@@ -155,9 +155,9 @@ export function selectOption(optionIndex , type) {
           {#each $questionData.options.filter(option => option !== "Upload") as option, index}
             <button class="option-button" on:click={() => selectOption(index , $questionData.type)}>{option}</button>
           {/each}
-          {#if $questionData.options.length > 1 && $questionData.options[0] !== "For General Data" && $questionData.options[1] !== "Upload" }
+          <!-- {#if $questionData.options.length > 1 && $questionData.options[0] !== "For General Data" && $questionData.options[1] !== "Upload" }
             <button class="option-button back-button" on:click={() => selectOption('back' , $questionData.type)}>Back</button>
-          {/if}
+          {/if} -->
       {:else}
           {#each $questionData.options.filter(option => option !== "Upload") as option, index}
             <button class="option-button" on:click={() => selectOption(index , $questionData.type)}>{option}</button>
