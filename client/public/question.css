@@ -107,7 +107,8 @@
     margin: 5px; /* Add some spacing between options */
     padding: 10px 20px; /* Adjust padding for better visual appearance */
     font-size: 18px; /* Adjust font size as needed */
-    width: 220px;
+    min-width: 220px; /* Minimum width to ensure the button doesn't get too small */
+    width: auto; 
     height: 50px;
     border: none;
     outline: none;
