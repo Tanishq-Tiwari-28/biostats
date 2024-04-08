@@ -25,7 +25,7 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Setup</a> •
+  <a href="#how-to-setup">How To Setup</a> •
   <a href="#demo">DEMO</a> •
   <a href="#credits">Credits</a> •
   <a href="#author">Author</a> •
@@ -51,7 +51,7 @@
   - libraries to make the application visually appealing.
 
 
-## How To Use
+## How To Setup
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
