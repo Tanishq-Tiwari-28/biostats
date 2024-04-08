@@ -111,11 +111,6 @@ This software uses the following open source packages:
 ## Author
 - Tanishq Tiwari : 2021496 [GITHUB](https://github.com/Tanishq-Tiwari-28)
 
-## Contributors
-- Om Garg : 2021481
-- Vibhav Balhara : 2021500
-- Siddharth Anand : 2021494
-
 
 
 <!-- ## Related
