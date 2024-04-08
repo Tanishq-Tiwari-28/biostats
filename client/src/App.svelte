@@ -11,7 +11,6 @@
             message = data.message;
         });
 
-    import File from './components/File.svelte';
     import Question from "./components/Question.svelte";
     import Result from "./components/Result.svelte";
 
@@ -27,7 +26,6 @@
     <div class="logo"></div>
 
     {#if finalResult === undefined}
-        <!-- <File /> -->
         <Question id={0} on:finalResult={handleFinalResult} />
     {:else}
         <Result result={finalResult} />
