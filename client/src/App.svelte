@@ -25,7 +25,7 @@
 <main>
     <h1>{message}</h1>
     {#if finalResult === undefined}
-        <File />
+        <!-- <File /> -->
         <Question id={0} on:finalResult={handleFinalResult} />
     {:else}
         <Result result={finalResult} />
