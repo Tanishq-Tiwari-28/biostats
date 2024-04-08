@@ -87,6 +87,10 @@ Terminate the Batch job and run "npm run dev" again.
 ## DEMO
 
 
+https://github.com/Tanishq-Tiwari-28/biostats/assets/101003432/38cb8bdb-9a46-4b50-af35-e90c459c781c
+
+
+
 
 <!-- ## Download
 
