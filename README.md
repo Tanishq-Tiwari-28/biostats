@@ -80,7 +80,7 @@ Click on START to proceed.
 > **Note**
 > Install the Dependencies form requirements correctly.
 > In case of the ERROR "Error: Cannot find package 'rollup-plugin-svelte' ".
-Terminate the Batch job and run "npm run dev" again.
+Terminate the Batch job , then run "npm install" and run "npm run dev" again.
  
 
 
