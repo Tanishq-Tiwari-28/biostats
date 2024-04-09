@@ -54,7 +54,7 @@ THIS IS FOR A GENERAL SET OF STATISTICAL QUESTIONS.
 
 ## Future Scope
 Currently We Implemented for General set of Questions related to Data.
-We have Given an option to Upload desired CSV, but as the analysis of the CSV automatically is a dificult task for now, and might proceed with this later😊. 
+We have Given an option to Upload desired CSV, but as the analysis of the CSV automatically is a dificult task for now, we might proceed with this later😊. 
 
 
 ## How To Setup
