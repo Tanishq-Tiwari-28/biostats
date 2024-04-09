@@ -25,6 +25,7 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
+  <a href="#future-scope">Future Scope</a> •
   <a href="#how-to-setup">How To Setup</a> •
   <a href="#demo">DEMO</a> •
   <a href="#credits">Credits</a> •
@@ -42,13 +43,18 @@
 
 ## Key Features
 
+THIS IS FOR A GENERAL SET OF STATISTICAL QUESTIONS.
 * Dynamic Questionare
-  - We will ask some questions , and according to the answer of the User , the next question will change dynamically.
-* Efficient Tree Data Structure to store the questions.
+  - We will ask minimum questions from User to get desired Statistical Suggestion. 
+* Efficient Tree Data Structure to store those questions.
 * Single Page Application
   - A SPA which is user friendly, and will load the questions in no time, and also without loading the URLs again and again.
 * Modern UI
   - libraries to make the application visually appealing.
+
+## Future Scope
+Currently We Implemented for General set of Questions related to Data.
+We have Given an option to Upload desired CSV, but as the analysis of the CSV automatically is a dificult task as for now, and might proceed with this later😊. 
 
 
 ## How To Setup
